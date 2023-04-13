@@ -2,6 +2,7 @@ package Commands;
 
 import Collection.Product;
 import CollectionManager.CollectionManager;
+import Expections.WrongArguments;
 
 import java.util.Iterator;
 
@@ -14,7 +15,7 @@ public class Show implements Command{
     }
 
     @Override
-    public void execute(String[] args) {
+    public void execute(String[] args) throws WrongArguments {
         Iterator<Product> iter = collectionManager.getIterator();
         if (!iter.hasNext()){
             System.out.println("Collection empty");

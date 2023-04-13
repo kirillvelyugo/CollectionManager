@@ -2,6 +2,8 @@ package Commands;
 
 import CollectionManager.CollectionManager;
 import Commands.Command;
+import Expections.WrongArguments;
+import com.sun.security.jgss.GSSUtil;
 
 import java.util.HashMap;
 import java.util.Scanner;
@@ -26,7 +28,11 @@ public class CommandExecutor {
             args[0] = args[0].toLowerCase();
 
             if (commands.containsKey(args[0])){
-                commands.get(args[0]).execute(args);
+                try {
+                    commands.get(args[0]).execute(args);
+                }catch (WrongArguments e){
+                    System.out.println("Incorrect arguments. Try again " + e.getMessage());
+                }
             }else{
                 System.out.println("Command not found. Try again or read help");
             }
