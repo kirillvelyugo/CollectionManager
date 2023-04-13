@@ -1,7 +1,8 @@
+package CollectionManager;
+
 import Collection.Product;
 
-import java.util.LinkedHashMap;
-import java.util.Objects;
+import java.util.*;
 
 public class CollectionManager {
     private final LinkedHashMap<Integer, Product> products;
@@ -14,5 +15,8 @@ public class CollectionManager {
         products.put(obj.getId(), obj);
     }
 
+    public Iterator<Product> getIterator (){
+        return this.products.values().iterator();
+    }
 
 }
