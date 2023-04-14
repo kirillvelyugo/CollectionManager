@@ -16,7 +16,8 @@ public class CommandExecutor {
         this.collectionManager = collectionManager;
         this.commands = new HashMap<>();
 
-        this.commands.put("show", new Show(collectionManager));
+        this.commands.put("show", new Show(this.collectionManager));
+        this.commands.put("help", new Help(this.commands));
     }
 
     public void interactiveMode (){
