@@ -5,7 +5,7 @@ import Collection.Product;
 import java.util.*;
 
 public class CollectionManager {
-    private final LinkedHashMap<Integer, Product> products;
+    private final LinkedHashMap <Integer, Product> products;
 
     public CollectionManager (){
         products = new LinkedHashMap<>();
@@ -17,6 +17,10 @@ public class CollectionManager {
 
     public Iterator<Product> getIterator (){
         return this.products.values().iterator();
+    }
+
+    public void clear (){
+        this.products.clear();
     }
 
 }
