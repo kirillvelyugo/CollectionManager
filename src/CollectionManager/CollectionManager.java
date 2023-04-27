@@ -15,8 +15,13 @@ public class CollectionManager {
         products.put(key, obj);
     }
 
+    public void removeKey (String key){
+        products.remove(key);
+    }
+
     public boolean containsKey (String key){
         return products.containsKey(key);
+        products.
     }
 
     public Product findById (int id){

@@ -22,6 +22,8 @@ public class CommandExecutor {
         this.commands.put("clear", new Clear(this.collectionManager));
         this.commands.put("insert", new Insert(this.collectionManager));
         this.commands.put("update", new Update(this.collectionManager));
+        this.commands.put("remove_key", new Remove_Key(this.collectionManager));
+
     }
 
     public void interactiveMode (){

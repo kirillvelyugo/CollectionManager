@@ -15,7 +15,7 @@ public class Clear implements Command {
 
     @Override
     public void execute(String[] args) throws WrongArguments {
-        this.collectionManager.clear();
+        collectionManager.clear();
         System.out.println("The collection has been cleared");
     }
 
