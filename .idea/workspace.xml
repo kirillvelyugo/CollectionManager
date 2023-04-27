@@ -1,19 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e11c6c1a-323d-4318-bc12-f1516f071c37" name="Changes" comment="feat: add FilterLessThanUnitOfMeasure command added">
-      <change afterPath="$PROJECT_DIR$/src/CollectionManager/Wrapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Commands/Save.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.xml" afterDir="false" />
+    <list default="true" id="e11c6c1a-323d-4318-bc12-f1516f071c37" name="Changes" comment=" feat: Add saving and reading from file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CollectionManager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CollectionManager.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Collection/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collection/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Collection/Coordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collection/Coordinates.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Collection/Organization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collection/Organization.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Collection/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collection/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CollectionManager/CollectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CollectionManager/CollectionManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Commands/CommandExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/CommandExecutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682572137190</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary=" feat: Add saving and reading from file">
+      <created>1682601437773</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1682601437773</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,7 +236,8 @@
     <MESSAGE value="feat: add RemoveLoverKey command added" />
     <MESSAGE value="feat: add MaxByName command added" />
     <MESSAGE value="feat: add FilterLessThanUnitOfMeasure command added" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add FilterLessThanUnitOfMeasure command added" />
+    <MESSAGE value=" feat: Add saving and reading from file" />
+    <option name="LAST_COMMIT_MESSAGE" value=" feat: Add saving and reading from file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -4,13 +4,9 @@ import Expections.InvalidValue;
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
 import jakarta.xml.bind.annotation.XmlElement;
-import jakarta.xml.bind.annotation.XmlRootElement;
-
-import javax.xml.bind.annotation.XmlAttribute;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 
-//@XmlRootElement(name="product")
 @XmlAccessorType(XmlAccessType.NONE)
 public class Product implements Comparable<Product>{
     @XmlElement(name = "id", required = true)
