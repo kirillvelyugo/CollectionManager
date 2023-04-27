@@ -159,8 +159,7 @@ public class CLIManager {
         return organization;
     }
 
-    public Product requestProduct (){
-        Product product = new Product();
+    public void requestProduct (Product product){
 
         // name field
         while (true){
@@ -227,6 +226,5 @@ public class CLIManager {
         } catch (InvalidValue e){
 
         }
-        return product;
     }
 }

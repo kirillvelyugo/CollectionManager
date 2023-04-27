@@ -1,5 +1,6 @@
 package Commands;
 
+import Collection.Product;
 import CollectionManager.CollectionManager;
 import Expections.WrongArguments;
 import Utils.CLIManager;
@@ -18,7 +19,11 @@ public class Insert implements Command{
 
         if (args.length < 2) throw new WrongArguments("Not enough arguments");
         if (collectionManager.containsKey(args[1])) throw new WrongArguments("Key already exist");
-        collectionManager.addObj(args[1], cliManager.requestProduct());
+        Product product = new Product();
+        cliManager.requestProduct(product);
+        collectionManager.addObj(args[1], product);
+
+        System.out.println("--Insert successfully--");
     }
 
     @Override

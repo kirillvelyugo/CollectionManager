@@ -19,8 +19,17 @@ public class CollectionManager {
         return products.containsKey(key);
     }
 
+    public Product findById (int id){
+        Iterator<Product> iter = getIterator();
+        while (iter.hasNext()){
+            Product product = iter.next();
+            if (product.getId() == id) return product;
+        }
+        return null;
+    }
+
     public Iterator<Product> getIterator (){
-        return this.products.values().iterator();
+        return products.values().iterator();
     }
 
     public void clear (){

@@ -7,7 +7,6 @@ import java.util.HashMap;
 import java.util.Set;
 
 public class Help implements Command{
-
     private final HashMap<String, Command> commands;
 
     public Help (HashMap<String, Command> commands){
