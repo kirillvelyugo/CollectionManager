@@ -32,8 +32,8 @@ public class Product {
         return name;
     }
 
-    public Coordinates getCoordinates() {
-        return coordinates;
+    public Coordinates getCoordinates(Coordinates coordinates) {
+        return this.coordinates;
     }
 
     public ZonedDateTime getCreationDate() {
@@ -58,34 +58,34 @@ public class Product {
 
     private void setId(Long id) {}
 
-    public void setName(String name) {
+    public void setName(String name) throws InvalidValue {
         if (name == null) {throw new InvalidValue("name shouldn't be null");}
         if (name.length() == 0) {throw new InvalidValue("name shouldn't be empty");}
         this.name = name;
     }
 
-    public void setCoordinates(Coordinates coordinates) {
+    public void setCoordinates(Coordinates coordinates) throws InvalidValue {
         if (coordinates == null) {throw new InvalidValue("coordinates shouldn't be null");}
         this.coordinates = coordinates;
     }
 
-    public void setPrice(Double price) {
+    public void setPrice(Double price) throws InvalidValue {
         if (price == null) {throw new InvalidValue("price shouldn't be null");}
         if (price < 0) {throw new InvalidValue("price shouldn't be less than 0");}
         this.price = price;
     }
 
-    public void setPartNumber(String partNumber) {
+    public void setPartNumber(String partNumber) throws InvalidValue {
         if (partNumber == null) {throw new InvalidValue("partNumber shouldn't be null");}
         this.partNumber = partNumber;
     }
 
-    public void setUnitOfMeasure(UnitOfMeasure unitOfMeasure) {
+    public void setUnitOfMeasure(UnitOfMeasure unitOfMeasure) throws InvalidValue {
         if (unitOfMeasure == null) {throw new InvalidValue("unitOfMeasure shouldn't be null");}
         this.unitOfMeasure = unitOfMeasure;
     }
 
-    public void setManufacturer(Organization manufacturer) {
+    public void setManufacturer(Organization manufacturer) throws InvalidValue {
         if (manufacturer == null) {throw new InvalidValue("manufacturer shouldn't be null");}
         this.manufacturer = manufacturer;
     }

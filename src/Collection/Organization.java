@@ -28,7 +28,7 @@ public class Organization {
         return name;
     }
 
-    public void setName(String name) {
+    public void setName(String name) throws InvalidValue {
         if (name == null) {throw new InvalidValue("name shouldn't be null");}
         if (name.length() == 0) {throw new InvalidValue("name shouldn't be empty");}
         this.name = name;
@@ -38,7 +38,7 @@ public class Organization {
         return employeesCount;
     }
 
-    public void setEmployeesCount(Long employeesCount) {
+    public void setEmployeesCount(Long employeesCount) throws InvalidValue {
         if (employeesCount == null) {throw new InvalidValue("employeesCount can't be null");}
         if (employeesCount < 0) {throw new InvalidValue("employeesCount should be grader than 0");}
         this.employeesCount = employeesCount;
@@ -48,7 +48,7 @@ public class Organization {
         return type;
     }
 
-    public void setType(OrganizationType type) {
+    public void setType(OrganizationType type) throws InvalidValue {
         if (type == null){throw new InvalidValue("organizationType shouldn't be null");}
         this.type = type;
     }
@@ -57,7 +57,7 @@ public class Organization {
         return officialAddress;
     }
 
-    public void setOfficialAddress(Address officialAddress) {
+    public void setOfficialAddress(Address officialAddress) throws InvalidValue {
         if (officialAddress == null) {throw new InvalidValue("officialAddress shouldn't be null");}
         this.officialAddress = officialAddress;
     }

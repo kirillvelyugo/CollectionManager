@@ -18,7 +18,7 @@ public class Coordinates {
         this.x = x;
     }
 
-    public void setY(Long y) {
+    public void setY(Long y) throws InvalidValue{
         if (y == null){throw new InvalidValue("y shouldn't be null");}
         if (y > 315){throw new InvalidValue("y shouldn't be grader than 315");}
         this.y = y;

@@ -9,7 +9,7 @@ public class Address {
         return zipCode;
     }
 
-    public void setZipCode(String zipCode) {
+    public void setZipCode(String zipCode) throws InvalidValue{
         if (zipCode == null){throw new InvalidValue("zipCode shouldn't be null");}
         this.zipCode = zipCode;
     }

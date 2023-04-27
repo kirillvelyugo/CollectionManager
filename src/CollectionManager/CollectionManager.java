@@ -5,14 +5,18 @@ import Collection.Product;
 import java.util.*;
 
 public class CollectionManager {
-    private final LinkedHashMap <Integer, Product> products;
+    private final LinkedHashMap <String, Product> products;
 
     public CollectionManager (){
         products = new LinkedHashMap<>();
     }
 
-    public void addObj (Product obj){
-        products.put(obj.getId(), obj);
+    public void addObj (String key, Product obj){
+        products.put(key, obj);
+    }
+
+    public boolean containsKey (String key){
+        return products.containsKey(key);
     }
 
     public Iterator<Product> getIterator (){

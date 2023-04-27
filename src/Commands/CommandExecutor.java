@@ -20,6 +20,7 @@ public class CommandExecutor {
         this.commands.put("help", new Help(this.commands));
         this.commands.put("exit", new Exit());
         this.commands.put("clear", new Clear(this.collectionManager));
+        this.commands.put("insert", new Insert(this.collectionManager));
     }
 
     public void interactiveMode (){
