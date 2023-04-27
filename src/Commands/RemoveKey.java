@@ -1,14 +1,12 @@
 package Commands;
 
-import Collection.Product;
 import CollectionManager.CollectionManager;
 import Expections.WrongArguments;
-import Utils.CLIManager;
 
-public class Remove_Key implements Command {
+public class RemoveKey implements Command {
     private final CollectionManager collectionManager;
 
-    public Remove_Key (CollectionManager collectionManager){
+    public RemoveKey(CollectionManager collectionManager){
         this.collectionManager = collectionManager;
     }
 

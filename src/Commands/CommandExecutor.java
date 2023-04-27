@@ -1,9 +1,7 @@
 package Commands;
 
 import CollectionManager.CollectionManager;
-import Commands.Command;
 import Expections.WrongArguments;
-import com.sun.security.jgss.GSSUtil;
 
 import java.util.HashMap;
 import java.util.Scanner;
@@ -22,7 +20,8 @@ public class CommandExecutor {
         this.commands.put("clear", new Clear(this.collectionManager));
         this.commands.put("insert", new Insert(this.collectionManager));
         this.commands.put("update", new Update(this.collectionManager));
-        this.commands.put("remove_key", new Remove_Key(this.collectionManager));
+        this.commands.put("remove_key", new RemoveKey(this.collectionManager));
+        this.commands.put("remove_any_by_price", new RemoveAnyByPrice(this.collectionManager));
 
     }
 
@@ -32,7 +31,7 @@ public class CommandExecutor {
             String line = console.nextLine();
 
             String[] args = line.split(" ");
-            args[0] = args[0].toLowerCase();
+            args[0] = args[0].toLowerCase().strip();
 
             if (commands.containsKey(args[0])){
                 try {

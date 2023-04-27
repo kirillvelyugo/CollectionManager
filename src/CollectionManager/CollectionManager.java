@@ -21,7 +21,6 @@ public class CollectionManager {
 
     public boolean containsKey (String key){
         return products.containsKey(key);
-        products.
     }
 
     public Product findById (int id){
@@ -39,6 +38,14 @@ public class CollectionManager {
 
     public void clear (){
         this.products.clear();
+    }
+
+    public Set<String> getKeySet(){
+        return products.keySet();
+    }
+
+    public Product getByKey(String key){
+        return products.get(key);
     }
 
 }

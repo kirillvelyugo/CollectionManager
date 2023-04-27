@@ -5,6 +5,7 @@ import CollectionManager.CollectionManager;
 import Expections.WrongArguments;
 
 import java.util.Iterator;
+import java.util.Set;
 
 public class Show implements Command{
 
@@ -24,9 +25,11 @@ public class Show implements Command{
 
         System.out.println("==========Show all collection==========");
 
-        while (iter.hasNext()){
-            System.out.println(iter.next());
-        }
+       Set<String> keyset = collectionManager.getKeySet();
+       for(String key : keyset){
+           System.out.println("Key = " + key + "; Value: " + collectionManager.getByKey(key));
+       }
+
 
         System.out.println("==========");
     }
