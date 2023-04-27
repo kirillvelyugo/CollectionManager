@@ -29,6 +29,7 @@ public class CommandExecutor {
         this.commands.put("filter_less_than_unit_of_measure", new FilterLessThanUnitOfMeasure(this.collectionManager));
         this.commands.put("info", new Info(this.collectionManager));
         this.commands.put("execute_script", new ExecuteScript(this.commands));
+        this.commands.put("save", new Save(this.collectionManager));
 
     }
 
@@ -44,7 +45,7 @@ public class CommandExecutor {
                 try {
                     commands.get(args[0]).execute(args);
                 }catch (WrongArguments e){
-                    System.out.println("Incorrect arguments. Try again " + e.getMessage());
+                    System.out.println("Incorrect arguments. Try again. " + e.getMessage());
                 }
             }else{
                 System.out.println("Command not found. Try again or read help");

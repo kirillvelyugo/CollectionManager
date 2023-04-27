@@ -2,10 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e11c6c1a-323d-4318-bc12-f1516f071c37" name="Changes" comment="feat: add FilterLessThanUnitOfMeasure command added">
-      <change afterPath="$PROJECT_DIR$/src/Commands/Info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CollectionManager/Wrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Commands/Save.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollectionManager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CollectionManager.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collection/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collection/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collection/Coordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collection/Coordinates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collection/Organization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collection/Organization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collection/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collection/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CollectionManager/CollectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CollectionManager/CollectionManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Commands/CommandExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/CommandExecutor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,17 +48,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application">
+      <envs>
+        <env name="path" value="$USER_HOME$/Desktop/test.xml" />
+      </envs>
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="CollectionManager" />
       <method v="2">
@@ -225,5 +239,15 @@
     <MESSAGE value="feat: add MaxByName command added" />
     <MESSAGE value="feat: add FilterLessThanUnitOfMeasure command added" />
     <option name="LAST_COMMIT_MESSAGE" value="feat: add FilterLessThanUnitOfMeasure command added" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="jakarta.xml.bind.UnmarshalException" package="jakarta.xml.bind" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -1,20 +1,35 @@
 package Collection;
 
 import Expections.InvalidValue;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlRootElement;
 
+import javax.xml.bind.annotation.XmlAttribute;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 
+//@XmlRootElement(name="product")
+@XmlAccessorType(XmlAccessType.NONE)
 public class Product implements Comparable<Product>{
+    @XmlElement(name = "id", required = true)
     final private Integer id; // Filed can't be null, Value of field should be grader than 0, value of field should be unique and generate automatic
+    @XmlElement(name = "name", required = true)
     private String name; // Filed can't be null, and String shouldn't be empty
+    @XmlElement(name = "coordinates")
     private Coordinates coordinates; // Field can be null
+//    @XmlElement(name = "creation_date", required = true)
     private java.time.ZonedDateTime creationDate; // Field can't be null, value generations automatic
+    @XmlElement(name = "price", required = true)
     private Double price; // Field can't be null, Value of field should be grader than 0
+    @XmlElement(name = "part_number")
     private String partNumber; // Field can be null
+    @XmlElement(name = "unit_of_measure")
     private UnitOfMeasure unitOfMeasure; // Field can be null
+    @XmlElement(name = "manufacturer")
     private Organization manufacturer; // Field can be null
-
+    @XmlElement(name = "tmp_id", required = true)
     private static Integer tmp_id = 1;
 
     public Product() {

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<wrapper>
+    <hashtable>
+        <entry>
+            <key>aboba</key>
+            <value>
+                <id>1</id>
+                <name>asdasd</name>
+                <coordinates>
+                    <x>213</x>
+                    <y>123</y>
+                </coordinates>
+                <creation_date/>
+                <price>123.0</price>
+                <part_number>213123123</part_number>
+                <unit_of_measure>METERS</unit_of_measure>
+                <manufacturer>
+                    <employeesCount>213123</employeesCount>
+                    <id>1</id>
+                    <name>1asdasd</name>
+                    <officialAddress/>
+                    <type>PUBLIC</type>
+                </manufacturer>
+                <tmp_id>2</tmp_id>
+            </value>
+        </entry>
+    </hashtable>
+</wrapper>
