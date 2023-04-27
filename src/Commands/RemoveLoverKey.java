@@ -8,11 +8,11 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
-public class RemoveGreaterKey implements Command{
+public class RemoveLoverKey implements Command{
 
     private final CollectionManager collectionManager;
 
-    public RemoveGreaterKey(CollectionManager collectionManager) {
+    public RemoveLoverKey(CollectionManager collectionManager) {
         this.collectionManager = collectionManager;
     }
 
@@ -24,7 +24,7 @@ public class RemoveGreaterKey implements Command{
         Set<String> keyset = collectionManager.getKeySet();
         Set<String> toRemove = new HashSet<>();
         for(String key : keyset){
-            if (key.compareTo(args[1]) > 0){
+            if (key.compareTo(args[1]) < 0){
                 toRemove.add(key);
                 counter += 1;
             }
@@ -36,6 +36,6 @@ public class RemoveGreaterKey implements Command{
 
     @Override
     public String info() {
-        return "remove from the collection all items whose key exceeds the specified one";
+        return "remove all items from the collection whose key is less than the specified one";
     }
 }
