@@ -2,6 +2,8 @@ package CollectionManager;
 
 import Collection.Product;
 
+import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.*;
 
 public class CollectionManager {
@@ -46,6 +48,28 @@ public class CollectionManager {
 
     public Product getByKey(String key){
         return products.get(key);
+    }
+
+    public String getInfo(){
+        String info = "";
+        info += "Information about collection:\n";
+        ZonedDateTime creationDate = null;
+
+        Set<String> keyset = this.getKeySet();
+
+
+        for(String key : keyset){
+            if (creationDate == null) creationDate = this.getByKey(key).getCreationDate();
+            if(this.getByKey(key).getCreationDate().compareTo(creationDate) < 0){
+                creationDate = this.getByKey(key).getCreationDate();
+            }
+        }
+
+        info += "Created at " + creationDate.format(DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm")) + '\n';
+        info += "Collection type is " + this.products.getClass().getName() + '\n';
+        info += "Amount of items stored in - " + this.products.size() + '\n';
+
+        return info;
     }
 
 }
