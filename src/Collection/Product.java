@@ -1,9 +1,12 @@
 package Collection;
 
 import Expections.InvalidValue;
+import Utils.DateTimeAdapter;
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
 import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 
@@ -18,7 +21,8 @@ public class Product implements Comparable<Product>{
     private String name; // Filed can't be null, and String shouldn't be empty
     @XmlElement(name = "coordinates")
     private Coordinates coordinates; // Field can be null
-//    @XmlElement(name = "creation_date", required = true)
+    @XmlElement(name = "creation_date", required = true)
+    @XmlJavaTypeAdapter(DateTimeAdapter.class)
     private java.time.ZonedDateTime creationDate; // Field can't be null, value generations automatic
     @XmlElement(name = "price", required = true)
     private Double price; // Field can't be null, Value of field should be grader than 0
@@ -114,7 +118,7 @@ public class Product implements Comparable<Product>{
      * @throws InvalidValue if partNumber is null
      */
     public void setPartNumber(String partNumber) throws InvalidValue {
-        if (partNumber == null) {throw new InvalidValue("partNumber shouldn't be null");}
+//        if (partNumber == null) {throw new InvalidValue("partNumber shouldn't be null");}
         this.partNumber = partNumber;
     }
 
@@ -124,7 +128,7 @@ public class Product implements Comparable<Product>{
      * @throws InvalidValue if unitOfMeasure is null
      */
     public void setUnitOfMeasure(UnitOfMeasure unitOfMeasure) throws InvalidValue {
-        if (unitOfMeasure == null) {throw new InvalidValue("unitOfMeasure shouldn't be null");}
+//        if (unitOfMeasure == null) {throw new InvalidValue("unitOfMeasure shouldn't be null");}
         this.unitOfMeasure = unitOfMeasure;
     }
 

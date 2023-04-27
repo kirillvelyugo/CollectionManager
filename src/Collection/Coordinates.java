@@ -6,10 +6,10 @@ import Expections.InvalidValue;
  * Coordinates class - use for store coordinates of product
  */
 public class Coordinates {
-    private long x;
+    private double x;
     private Long y; // Max value: 315, Field can't be null
 
-    public long getX() {
+    public double getX() {
         return x;
     }
 
@@ -21,7 +21,7 @@ public class Coordinates {
      * Set X coordinate
      * @param x X coordinate
      */
-    public void setX(long x) {
+    public void setX(double x) {
         this.x = x;
     }
 

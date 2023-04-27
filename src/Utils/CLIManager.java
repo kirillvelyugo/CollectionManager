@@ -15,7 +15,9 @@ public class CLIManager {
      * @return correct string. Can be empty
      */
     public String requestString(){
-        return scanner.nextLine();
+        String line = scanner.nextLine();
+        if (line.length() == 0) return null;
+        return line;
     }
 
     /**
@@ -124,14 +126,14 @@ public class CLIManager {
         while (true){
             try{
                 System.out.println("Enter X coordinate:");
-                Long temp = requestLong();
+                Double temp = requestDouble();
                 if (temp == null){
                     throw new NumberFormatException();
                 }
                 coordinates.setX(temp);
                 break;
             } catch (NumberFormatException e){
-                System.out.println("X should be long. Try again!");
+                System.out.println("X should be double. Try again!");
             }
         }
 

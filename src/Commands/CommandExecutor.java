@@ -3,6 +3,7 @@ package Commands;
 import CollectionManager.CollectionManager;
 import Expections.WrongArguments;
 import java.util.HashMap;
+import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 /**
@@ -41,19 +42,24 @@ public class CommandExecutor {
     public void interactiveMode (){
         while (true){
             Scanner console = new Scanner(System.in);
-            String line = console.nextLine();
+            try {
+                String line = console.nextLine();
 
-            String[] args = line.split(" ");
-            args[0] = args[0].toLowerCase().strip();
+                String[] args = line.split(" ");
+                args[0] = args[0].toLowerCase().strip();
 
-            if (commands.containsKey(args[0])){
-                try {
-                    commands.get(args[0]).execute(args);
-                }catch (WrongArguments e){
-                    System.out.println("Incorrect arguments. Try again. " + e.getMessage());
+                if (commands.containsKey(args[0])) {
+                    try {
+                        commands.get(args[0]).execute(args);
+                    } catch (WrongArguments e) {
+                        System.out.println("Incorrect arguments. Try again. " + e.getMessage());
+                    }
+                } else {
+                    System.out.println("Command not found. Try again or read help");
                 }
-            }else{
-                System.out.println("Command not found. Try again or read help");
+            }
+            catch (NoSuchElementException e){
+                System.out.println("Exit program");
             }
         }
     }
