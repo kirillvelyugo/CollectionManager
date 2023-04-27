@@ -28,6 +28,7 @@ public class CommandExecutor {
         this.commands.put("max_by_name", new MaxByName(this.collectionManager));
         this.commands.put("filter_less_than_unit_of_measure", new FilterLessThanUnitOfMeasure(this.collectionManager));
         this.commands.put("info", new Info(this.collectionManager));
+        this.commands.put("execute_script", new ExecuteScript(this.commands));
 
     }
 
