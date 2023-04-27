@@ -7,9 +7,9 @@ public class Main {
     public static void main(String[] args) throws InvalidValue {
         CollectionManager collectionManager = new CollectionManager();
         collectionManager.addObj("100", new Product());
-        collectionManager.getByKey("100").setPartNumber("100");
+        collectionManager.getByKey("100").setName("200");
         collectionManager.addObj("200", new Product());
-        collectionManager.getByKey("200").setPartNumber("100");
+        collectionManager.getByKey("200").setName("300");
 
         CommandExecutor commandExecutor = new CommandExecutor(collectionManager);
 

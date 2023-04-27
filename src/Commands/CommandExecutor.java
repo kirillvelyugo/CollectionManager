@@ -25,6 +25,7 @@ public class CommandExecutor {
         this.commands.put("replace_if_greater", new ReplaceIfGreater(this.collectionManager));
         this.commands.put("remove_greater_key", new RemoveGreaterKey(this.collectionManager));
         this.commands.put("remove_lover_key", new RemoveLoverKey(this.collectionManager));
+        this.commands.put("max_by_name", new MaxByName(this.collectionManager));
 
     }
 
