@@ -5,7 +5,7 @@ import Expections.InvalidValue;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 
-public class Product {
+public class Product implements Comparable<Product>{
     final private Integer id; // Filed can't be null, Value of field should be grader than 0, value of field should be unique and generate automatic
     private String name; // Filed can't be null, and String shouldn't be empty
     private Coordinates coordinates; // Field can be null
@@ -100,5 +100,10 @@ public class Product {
                 ", partNumber = " + this.partNumber +
                 ", unitOfMeasure = " + this.unitOfMeasure +
                 ", manufacturer = " + this.manufacturer;
+    }
+
+    @Override
+    public int compareTo(Product oth) {
+        return partNumber.compareTo(oth.partNumber);
     }
 }

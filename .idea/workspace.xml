@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e11c6c1a-323d-4318-bc12-f1516f071c37" name="Changes" comment="feat: add Remove_Key command">
-      <change afterPath="$PROJECT_DIR$/src/Commands/RemoveAnyByPrice.java" afterDir="false" />
+    <list default="true" id="e11c6c1a-323d-4318-bc12-f1516f071c37" name="Changes" comment="feat: add RemoveAnyByPrice command, refactor RemoveKey">
+      <change afterPath="$PROJECT_DIR$/src/Commands/ReplaceIfGreater.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CollectionManager/CollectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CollectionManager/CollectionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collection/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collection/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Commands/CommandExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/CommandExecutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Commands/Remove_Key.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/RemoveKey.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Commands/Show.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/Show.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +69,7 @@
       <updated>1681423151963</updated>
       <workItem from="1681423153766" duration="12515000" />
       <workItem from="1682526883960" duration="597000" />
-      <workItem from="1682550249893" duration="16968000" />
+      <workItem from="1682550249893" duration="18902000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1681423934745</created>
@@ -150,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682566402404</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="feat: add RemoveAnyByPrice command, refactor RemoveKey">
+      <created>1682567659975</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1682567659975</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,6 +184,7 @@
     <MESSAGE value="feat: add CLIManager, add Insert command" />
     <MESSAGE value="feat: add Update command" />
     <MESSAGE value="feat: add Remove_Key command" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add Remove_Key command" />
+    <MESSAGE value="feat: add RemoveAnyByPrice command, refactor RemoveKey" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add RemoveAnyByPrice command, refactor RemoveKey" />
   </component>
 </project>
