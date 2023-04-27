@@ -2,9 +2,11 @@ package CollectionManager;
 
 import Collection.Product;
 import jakarta.xml.bind.annotation.XmlRootElement;
-
 import java.util.LinkedHashMap;
 
+/**
+ * Wrapper class to saving LinkedHashMap to Xml
+ */
 @XmlRootElement
 class Wrapper {
 

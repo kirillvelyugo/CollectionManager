@@ -3,11 +3,12 @@ package Commands;
 import CollectionManager.CollectionManager;
 import Expections.WrongArguments;
 
-import java.util.LinkedHashMap;
-
+/**
+ * Clear command. Delete all items from collection.
+ */
 public class Clear implements Command {
 
-    private CollectionManager collectionManager;
+    private final CollectionManager collectionManager;
 
     public Clear (CollectionManager collectionManager){
         this.collectionManager = collectionManager;

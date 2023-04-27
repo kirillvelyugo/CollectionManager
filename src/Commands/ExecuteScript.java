@@ -1,7 +1,6 @@
 package Commands;
 
 import Expections.WrongArguments;
-
 import javax.naming.NoPermissionException;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -13,7 +12,10 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
-
+/**
+ * Execute script command. Takes one argument with script file path
+ * This command uses collectionManager reference to call "add" method
+ */
 public class ExecuteScript implements Command{
 
     HashMap<String, Command> commands;
@@ -53,6 +55,11 @@ public class ExecuteScript implements Command{
         }
     }
 
+    /**
+     * Read line from file, parse command and argument and run a command.
+     * @param scanner Scanner
+     * @throws IOException when reader not available
+     */
     private void run(Scanner scanner) throws IOException {
 
         while (scanner.hasNext()) {
@@ -80,11 +87,6 @@ public class ExecuteScript implements Command{
                 System.out.println(args[0] + " is not a command. Try again");
             }
         }
-    }
-
-
-    private void runCommand(Command command, String[] args) throws WrongArguments {
-
     }
 
     @Override

@@ -5,6 +5,9 @@ import CollectionManager.CollectionManager;
 import Expections.WrongArguments;
 import Utils.CLIManager;
 
+/**
+ * Class replace the value by key if the new value is greater than the old one
+ */
 public class ReplaceIfGreater implements Command{
     private final CollectionManager collectionManager;
 

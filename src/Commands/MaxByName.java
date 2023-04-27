@@ -2,10 +2,11 @@ package Commands;
 
 import CollectionManager.CollectionManager;
 import Expections.WrongArguments;
-
-import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * Class output any object from the collection whose name field value is the maximum
+ */
 public class MaxByName implements Command{
 
     private final CollectionManager collectionManager;

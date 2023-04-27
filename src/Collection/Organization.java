@@ -2,6 +2,9 @@ package Collection;
 
 import Expections.InvalidValue;
 
+/**
+ * Organization class - use for store information about organization
+ */
 public class Organization {
     private long id; // Value of field should be grader than 0, value of field should be unique and generate automatic
     private String name; // Field can't be null, String shouldn't be empty
@@ -28,6 +31,11 @@ public class Organization {
         return name;
     }
 
+    /**
+     * Set Name of organization
+     * @param name Name of organization
+     * @throws InvalidValue If Name is null or Name is empty
+     */
     public void setName(String name) throws InvalidValue {
         if (name == null) {throw new InvalidValue("name shouldn't be null");}
         if (name.length() == 0) {throw new InvalidValue("name shouldn't be empty");}
@@ -38,6 +46,11 @@ public class Organization {
         return employeesCount;
     }
 
+    /**
+     * Set employeesCount
+     * @param employeesCount Count of employees
+     * @throws InvalidValue If employeesCount is null or employeesCount < 0
+     */
     public void setEmployeesCount(Long employeesCount) throws InvalidValue {
         if (employeesCount == null) {throw new InvalidValue("employeesCount can't be null");}
         if (employeesCount < 0) {throw new InvalidValue("employeesCount should be grader than 0");}
@@ -48,6 +61,11 @@ public class Organization {
         return type;
     }
 
+    /**
+     * Set type of organization
+     * @param type Type of organization
+     * @throws InvalidValue If type is null
+     */
     public void setType(OrganizationType type) throws InvalidValue {
         if (type == null){throw new InvalidValue("organizationType shouldn't be null");}
         this.type = type;
@@ -57,6 +75,11 @@ public class Organization {
         return officialAddress;
     }
 
+    /**
+     * set official address of organization
+     * @param officialAddress OfficialAddress
+     * @throws InvalidValue If officialAddress is null
+     */
     public void setOfficialAddress(Address officialAddress) throws InvalidValue {
         if (officialAddress == null) {throw new InvalidValue("officialAddress shouldn't be null");}
         this.officialAddress = officialAddress;

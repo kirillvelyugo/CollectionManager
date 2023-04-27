@@ -5,9 +5,9 @@ import CollectionManager.CollectionManager;
 import Expections.WrongArguments;
 import Utils.CLIManager;
 
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-
+/**
+ * Class update the value of a collection item whose id is equal to the specified one
+ */
 public class Update implements Command{
     private final CollectionManager collectionManager;
 

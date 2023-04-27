@@ -3,8 +3,9 @@ package Commands;
 import CollectionManager.CollectionManager;
 import Expections.WrongArguments;
 
-import java.util.HashMap;
-
+/**
+ * Info command. Prints information about collection
+ */
 public class Info implements Command{
 
     private final CollectionManager collectionManager;

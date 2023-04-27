@@ -1,5 +1,8 @@
 package Collection;
 
+/**
+ * Enum for organization types
+ */
 public enum OrganizationType {
     COMMERCIAL,
     PUBLIC,

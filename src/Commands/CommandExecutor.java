@@ -2,10 +2,12 @@ package Commands;
 
 import CollectionManager.CollectionManager;
 import Expections.WrongArguments;
-
 import java.util.HashMap;
 import java.util.Scanner;
 
+/**
+ * Class for interactive CLI mode.
+ */
 public class CommandExecutor {
     private final CollectionManager collectionManager;
     private final HashMap<String, Command> commands;
@@ -24,7 +26,7 @@ public class CommandExecutor {
         this.commands.put("remove_any_by_price", new RemoveAnyByPrice(this.collectionManager));
         this.commands.put("replace_if_greater", new ReplaceIfGreater(this.collectionManager));
         this.commands.put("remove_greater_key", new RemoveGreaterKey(this.collectionManager));
-        this.commands.put("remove_lover_key", new RemoveLoverKey(this.collectionManager));
+        this.commands.put("remove_lover_key", new RemoveLowerKey(this.collectionManager));
         this.commands.put("max_by_name", new MaxByName(this.collectionManager));
         this.commands.put("filter_less_than_unit_of_measure", new FilterLessThanUnitOfMeasure(this.collectionManager));
         this.commands.put("info", new Info(this.collectionManager));
@@ -33,6 +35,9 @@ public class CommandExecutor {
 
     }
 
+    /**
+     * Enter an interactive mode with CLI commands execution
+     */
     public void interactiveMode (){
         while (true){
             Scanner console = new Scanner(System.in);

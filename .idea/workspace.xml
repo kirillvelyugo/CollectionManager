@@ -1,10 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e11c6c1a-323d-4318-bc12-f1516f071c37" name="Changes" comment=" feat: Add saving and reading from file">
+    <list default="true" id="e11c6c1a-323d-4318-bc12-f1516f071c37" name="Changes" comment=" fix: refactoring">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collection/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collection/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collection/Coordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collection/Coordinates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collection/Organization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collection/Organization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collection/OrganizationType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collection/OrganizationType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Collection/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collection/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collection/UnitOfMeasure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collection/UnitOfMeasure.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CollectionManager/CollectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CollectionManager/CollectionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CollectionManager/Wrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CollectionManager/Wrapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/Clear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/Clear.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/CommandExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/CommandExecutor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/ExecuteScript.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/ExecuteScript.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/Exit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/Exit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/FilterLessThanUnitOfMeasure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/FilterLessThanUnitOfMeasure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/Help.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/Help.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/Info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/Info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/Insert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/Insert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/MaxByName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/MaxByName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/RemoveAnyByPrice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/RemoveAnyByPrice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/RemoveGreaterKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/RemoveGreaterKey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/RemoveKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/RemoveKey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/RemoveLoverKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/RemoveLowerKey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/ReplaceIfGreater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/ReplaceIfGreater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/Save.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/Save.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/Show.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/Show.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/Update.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/Update.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Expections/InvalidValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Expections/InvalidValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Expections/WrongArguments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Expections/WrongArguments.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utils/CLIManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/CLIManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682601437773</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary=" fix: refactoring">
+      <created>1682601588114</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1682601588114</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,7 +246,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/dev" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -237,7 +283,8 @@
     <MESSAGE value="feat: add MaxByName command added" />
     <MESSAGE value="feat: add FilterLessThanUnitOfMeasure command added" />
     <MESSAGE value=" feat: Add saving and reading from file" />
-    <option name="LAST_COMMIT_MESSAGE" value=" feat: Add saving and reading from file" />
+    <MESSAGE value=" fix: refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value=" fix: refactoring" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

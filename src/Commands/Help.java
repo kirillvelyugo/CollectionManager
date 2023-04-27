@@ -1,11 +1,11 @@
 package Commands;
 
-import CollectionManager.CollectionManager;
 import Expections.WrongArguments;
-
 import java.util.HashMap;
-import java.util.Set;
 
+/**
+ * Help command. Prints info about all available commands
+ */
 public class Help implements Command{
     private final HashMap<String, Command> commands;
 

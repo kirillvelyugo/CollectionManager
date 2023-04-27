@@ -5,6 +5,9 @@ import CollectionManager.CollectionManager;
 import Expections.WrongArguments;
 import Utils.CLIManager;
 
+/**
+ * Add command. Request element from CLI and add it to collection.
+ */
 public class Insert implements Command{
 
     private final CollectionManager collectionManager;

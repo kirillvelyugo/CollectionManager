@@ -2,41 +2,71 @@ package Utils;
 
 import Collection.*;
 import Expections.InvalidValue;
-import Expections.WrongArguments;
-
 import java.util.Scanner;
 
+/**
+ * Class for getting correct values
+ */
 public class CLIManager {
     private static final Scanner scanner = new Scanner(System.in);
 
+    /**
+     * Read String from terminal
+     * @return correct string. Can be empty
+     */
     public String requestString(){
         return scanner.nextLine();
     }
 
+    /**
+     * Read Integer from terminal
+     * @return correct Integer. Can be null
+     * @throws NumberFormatException if input doesn't Integer number
+     */
     public Integer requestInteger() throws NumberFormatException {
         String line = scanner.nextLine();
         if (line.length() == 0) return null;
         return Integer.parseInt(line);
     }
 
+    /**
+     * Read Double from terminal
+     * @return correct Double. Can be null
+     * @throws NumberFormatException if input doesn't Double number
+     */
     public Double requestDouble() throws NumberFormatException {
         String line = scanner.nextLine();
         if (line.length() == 0) return null;
         return Double.parseDouble(line);
     }
 
+    /**
+     * Read Float from terminal
+     * @return correct Float. Can be null
+     * @throws NumberFormatException if input doesn't Float number
+     */
     public Float requestFloat() throws NumberFormatException {
         String line = scanner.nextLine();
         if (line.length() == 0) return null;
         return Float.parseFloat(line);
     }
 
+    /**
+     * Read Long from terminal
+     * @return correct Long. Can be null
+     * @throws NumberFormatException if input doesn't Long number
+     */
     public Long requestLong() throws NumberFormatException {
         String line = scanner.nextLine();
         if (line.length() == 0) return null;
         return Long.parseLong(line);
     }
 
+    /**
+     * Offers the user options to choose from. Read OrganizationType from terminal. Not case-sensitive
+     * @return correct OrganizationType. Can be null
+     * @throws IllegalArgumentException if incorrect option
+     */
     public OrganizationType requestOrganizationType() throws IllegalArgumentException {
         for (var item : OrganizationType.values()){
             System.out.print(item + " ");
@@ -47,6 +77,11 @@ public class CLIManager {
         return OrganizationType.valueOf(line);
     }
 
+    /**
+     * Offers the user options to choose from. Read UnitOfMeasure from terminal. Not case-sensitive
+     * @return correct UnitOfMeasure. Can be null
+     * @throws IllegalArgumentException if incorrect option
+     */
     public UnitOfMeasure requestUnitOfMeasure() throws IllegalArgumentException {
         for (var item : UnitOfMeasure.values()){
             System.out.print(item + " ");
@@ -57,6 +92,10 @@ public class CLIManager {
         return UnitOfMeasure.valueOf(line);
     }
 
+    /**
+     * Read address information from terminal
+     * @return correct Address
+     */
     public Address requestAddress() {
         Address address = new Address();
 
@@ -74,6 +113,10 @@ public class CLIManager {
         return address;
     }
 
+    /**
+     * Read coordinates information from terminal
+     * @return correct Coordinates
+     */
     public Coordinates requestCoordinates(){
         Coordinates coordinates = new Coordinates();
 
@@ -108,6 +151,10 @@ public class CLIManager {
         return coordinates;
     }
 
+    /**
+     * Read organization information from terminal
+     * @return correct Organization
+     */
     public Organization requestOrganization(){
         Organization organization = new Organization();
 
@@ -152,13 +199,17 @@ public class CLIManager {
         try {
             System.out.println("Enter official address:");
             organization.setOfficialAddress(requestAddress());
-        } catch (InvalidValue e){
+        } catch (InvalidValue ignored){
 
         }
 
         return organization;
     }
 
+    /**
+     * Read product information from terminal
+     * @param product
+     */
     public void requestProduct (Product product){
 
         // name field
@@ -176,7 +227,7 @@ public class CLIManager {
         try {
             System.out.println("Enter coordinates:");
             product.setCoordinates(requestCoordinates());
-        }catch (InvalidValue e){
+        }catch (InvalidValue ignored){
 
         }
 
@@ -223,7 +274,7 @@ public class CLIManager {
         try {
             System.out.println("Enter information about manufacture:");
             product.setManufacturer(requestOrganization());
-        } catch (InvalidValue e){
+        } catch (InvalidValue ignored){
 
         }
     }

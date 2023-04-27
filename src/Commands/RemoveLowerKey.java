@@ -1,18 +1,18 @@
 package Commands;
 
-import Collection.Product;
 import CollectionManager.CollectionManager;
 import Expections.WrongArguments;
-
 import java.util.HashSet;
-import java.util.Iterator;
 import java.util.Set;
 
-public class RemoveLoverKey implements Command{
+/**
+ * Class remove all items from the collection whose key is less than the specified one
+ */
+public class RemoveLowerKey implements Command{
 
     private final CollectionManager collectionManager;
 
-    public RemoveLoverKey(CollectionManager collectionManager) {
+    public RemoveLowerKey(CollectionManager collectionManager) {
         this.collectionManager = collectionManager;
     }
 
@@ -31,7 +31,6 @@ public class RemoveLoverKey implements Command{
         }
         collectionManager.getKeySet().removeAll(toRemove);
         System.out.println("Removed " + counter + " elements");
-
     }
 
     @Override

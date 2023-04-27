@@ -1,13 +1,13 @@
 package Commands;
 
-import Collection.Product;
 import CollectionManager.CollectionManager;
 import Expections.WrongArguments;
-
 import java.util.HashSet;
-import java.util.Iterator;
 import java.util.Set;
 
+/**
+ * Class remove from the collection all items whose key exceeds the specified one
+ */
 public class RemoveGreaterKey implements Command{
 
     private final CollectionManager collectionManager;

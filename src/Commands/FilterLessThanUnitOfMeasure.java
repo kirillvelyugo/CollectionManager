@@ -3,9 +3,11 @@ package Commands;
 import Collection.UnitOfMeasure;
 import CollectionManager.CollectionManager;
 import Expections.WrongArguments;
-
 import java.util.Set;
 
+/**
+ * Class output elements whose unit Of Measure field value is less than the specified one
+ */
 public class FilterLessThanUnitOfMeasure implements Command{
 
     private final CollectionManager collectionManager;
