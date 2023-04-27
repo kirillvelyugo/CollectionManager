@@ -23,6 +23,7 @@ public class CommandExecutor {
         this.commands.put("remove_key", new RemoveKey(this.collectionManager));
         this.commands.put("remove_any_by_price", new RemoveAnyByPrice(this.collectionManager));
         this.commands.put("replace_if_greater", new ReplaceIfGreater(this.collectionManager));
+        this.commands.put("remove_greater_key", new RemoveGreaterKey(this.collectionManager));
 
     }
 

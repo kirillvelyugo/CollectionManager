@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e11c6c1a-323d-4318-bc12-f1516f071c37" name="Changes" comment="feat: add RemoveAnyByPrice command, refactor RemoveKey">
-      <change afterPath="$PROJECT_DIR$/src/Commands/ReplaceIfGreater.java" afterDir="false" />
+    <list default="true" id="e11c6c1a-323d-4318-bc12-f1516f071c37" name="Changes" comment="feat: add ReplaceIfGreater command, compare_to in Product">
+      <change afterPath="$PROJECT_DIR$/src/Commands/RemoveGreaterKey.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Collection/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collection/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Commands/CommandExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/CommandExecutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +67,7 @@
       <updated>1681423151963</updated>
       <workItem from="1681423153766" duration="12515000" />
       <workItem from="1682526883960" duration="597000" />
-      <workItem from="1682550249893" duration="18902000" />
+      <workItem from="1682550249893" duration="20026000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1681423934745</created>
@@ -155,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682567659975</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="feat: add ReplaceIfGreater command, compare_to in Product">
+      <created>1682569616178</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1682569616178</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,6 +190,7 @@
     <MESSAGE value="feat: add Update command" />
     <MESSAGE value="feat: add Remove_Key command" />
     <MESSAGE value="feat: add RemoveAnyByPrice command, refactor RemoveKey" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add RemoveAnyByPrice command, refactor RemoveKey" />
+    <MESSAGE value="feat: add ReplaceIfGreater command, compare_to in Product" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add ReplaceIfGreater command, compare_to in Product" />
   </component>
 </project>
