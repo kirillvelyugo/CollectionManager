@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e11c6c1a-323d-4318-bc12-f1516f071c37" name="Changes" comment="feat: add RemoveLoverKey command added">
-      <change afterPath="$PROJECT_DIR$/src/Commands/MaxByName.java" afterDir="false" />
+    <list default="true" id="e11c6c1a-323d-4318-bc12-f1516f071c37" name="Changes" comment="feat: add MaxByName command added">
+      <change afterPath="$PROJECT_DIR$/src/Commands/FilterLessThanUnitOfMeasure.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Commands/CommandExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/CommandExecutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +67,7 @@
       <updated>1681423151963</updated>
       <workItem from="1681423153766" duration="12515000" />
       <workItem from="1682526883960" duration="597000" />
-      <workItem from="1682550249893" duration="20848000" />
+      <workItem from="1682550249893" duration="21432000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1681423934745</created>
@@ -175,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682571030119</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="feat: add MaxByName command added">
+      <created>1682571580960</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1682571580960</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,6 +214,7 @@
     <MESSAGE value="feat: add ReplaceIfGreater command, compare_to in Product" />
     <MESSAGE value="feat: add RemoveGreaterKey command added" />
     <MESSAGE value="feat: add RemoveLoverKey command added" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add RemoveLoverKey command added" />
+    <MESSAGE value="feat: add MaxByName command added" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add MaxByName command added" />
   </component>
 </project>
