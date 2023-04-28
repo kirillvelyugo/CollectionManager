@@ -128,9 +128,13 @@ public class CollectionManager {
             }
         }
 
-        info += "Created at " + creationDate.format(DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm")) + '\n';
-        info += "Collection type is " + this.products.getClass().getName() + '\n';
-        info += "Amount of items stored in - " + this.products.size() + '\n';
+        if (creationDate == null){
+            info += "Cannot spot creation date because collection is empty\n";
+        }else{
+            info += "Created at " + creationDate.format(DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm")) + '\n';
+            info += "Collection type is " + this.products.getClass().getName() + '\n';
+            info += "Amount of items stored in - " + this.products.size() + '\n';
+        }
 
         return info;
     }
