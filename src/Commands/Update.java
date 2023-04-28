@@ -36,6 +36,6 @@ public class Update implements Command{
 
     @Override
     public String info() {
-        return "update the value of a collection item whose id is equal to the specified one";
+        return "[id] Description: update the value of a collection item whose id is equal to the specified one";
     }
 }

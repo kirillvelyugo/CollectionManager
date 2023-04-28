@@ -15,13 +15,15 @@ public class Help implements Command{
 
     @Override
     public void execute(String[] args) throws WrongArguments {
+        System.out.println("==========Help==========");
         for (String command : commands.keySet()){
-            System.out.println(command + " -- " + commands.get(command).info());
+            System.out.println(command + " " + commands.get(command).info());
         }
+        System.out.println("==========");
     }
 
     @Override
     public String info() {
-        return "output help for available commands";
+        return "[] Description: output help for available commands";
     }
 }

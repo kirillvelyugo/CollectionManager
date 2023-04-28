@@ -36,6 +36,6 @@ public class RemoveGreaterKey implements Command{
 
     @Override
     public String info() {
-        return "remove from the collection all items whose key exceeds the specified one";
+        return "[key] Description: remove from the collection all items whose key exceeds the specified one";
     }
 }

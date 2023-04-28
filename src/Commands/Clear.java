@@ -22,6 +22,6 @@ public class Clear implements Command {
 
     @Override
     public String info() {
-        return "clear the collection";
+        return "[] Description: clear the collection";
     }
 }

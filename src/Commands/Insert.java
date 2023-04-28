@@ -31,6 +31,6 @@ public class Insert implements Command{
 
     @Override
     public String info() {
-        return "add a new element with the specified key";
+        return "[key] Description: add a new element with the specified key";
     }
 }

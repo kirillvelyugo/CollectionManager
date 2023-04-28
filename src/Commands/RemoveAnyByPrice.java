@@ -36,6 +36,6 @@ public class RemoveAnyByPrice implements Command{
 
     @Override
     public String info() {
-        return "remove one element from the collection, the value of the price field of which is equivalent to the given one";
+        return "[price] Description: remove one element from the collection, the value of the price field of which is equivalent to the given one";
     }
 }

@@ -32,12 +32,11 @@ public class Show implements Command{
            System.out.println("Key = " + key + "; Value: " + collectionManager.getByKey(key));
        }
 
-
-        System.out.println("==========");
+       System.out.println("==========");
     }
 
     @Override
     public String info() {
-        return "output to the standard output stream all the elements of the collection in a string representation";
+        return "[] Description: output to the standard output stream all the elements of the collection in a string representation";
     }
 }

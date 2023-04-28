@@ -35,6 +35,6 @@ public class RemoveLowerKey implements Command{
 
     @Override
     public String info() {
-        return "remove all items from the collection whose key is less than the specified one";
+        return "[key] Description: remove all items from the collection whose key is less than the specified one";
     }
 }

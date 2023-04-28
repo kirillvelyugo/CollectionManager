@@ -53,6 +53,6 @@ public class Save implements Command{
 
     @Override
     public String info() {
-        return "save collection to file";
+        return "[] Description: save collection to file";
     }
 }

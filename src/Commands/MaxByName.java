@@ -37,6 +37,6 @@ public class MaxByName implements Command{
 
     @Override
     public String info() {
-        return "output any object from the collection whose name field value is the maximum";
+        return "[] Description: output any object from the collection whose name field value is the maximum";
     }
 }

@@ -21,6 +21,6 @@ public class Info implements Command{
 
     @Override
     public String info() {
-        return "show information about collection";
+        return "[] Description: show information about collection";
     }
 }

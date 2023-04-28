@@ -40,6 +40,6 @@ public class FilterLessThanUnitOfMeasure implements Command{
 
     @Override
     public String info() {
-        return "output elements whose unit Of Measure field value is less than the specified one";
+        return "[KILOGRAMS METERS CENTIMETERS SQUARE_METERS GRAMS] Description: output elements whose unit Of Measure field value is less than the specified one";
     }
 }

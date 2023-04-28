@@ -91,6 +91,6 @@ public class ExecuteScript implements Command{
 
     @Override
     public String info() {
-        return "execute script in file";
+        return "[file_name] Description: execute script in file";
     }
 }

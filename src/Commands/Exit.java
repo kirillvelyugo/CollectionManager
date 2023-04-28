@@ -14,6 +14,6 @@ public class Exit implements Command{
 
     @Override
     public String info() {
-        return "terminate the program (without saving to a file)";
+        return "[] Description: terminate the program (without saving to a file)";
     }
 }

@@ -37,6 +37,6 @@ public class ReplaceIfGreater implements Command{
 
     @Override
     public String info() {
-        return "replace the value by key if the new value is greater than the old one";
+        return "[key] Description: replace the value by key if the new value is greater than the old one";
     }
 }
