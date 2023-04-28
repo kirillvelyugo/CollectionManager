@@ -1,6 +1,7 @@
 package CollectionManager;
 
 import Collection.Product;
+import Utils.Wrapper;
 import jakarta.xml.bind.JAXBContext;
 import jakarta.xml.bind.JAXBException;
 import jakarta.xml.bind.Marshaller;

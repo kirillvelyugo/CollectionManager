@@ -29,7 +29,7 @@ public class ReplaceIfGreater implements Command{
 
         if (newProduct.compareTo(oldProduct) > 0){
            collectionManager.addObj(args[1], newProduct);
-            System.out.println("--Updated successfully--");
+           System.out.println("--Updated successfully--");
         }
         else System.out.println("--Not updated--");
 

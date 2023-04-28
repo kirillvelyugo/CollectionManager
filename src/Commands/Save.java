@@ -36,7 +36,7 @@ public class Save implements Command{
                 if (!Files.isWritable(path)) throw new NoPermissionException("Cannot write to file.");
             }
 
-            if(path == null) throw  new WrongArguments("Incorrect path!");
+            if(path == null) throw new WrongArguments("Incorrect path!");
             collectionManager.save(path);
             System.out.println("Collection saved to file " + path + " successfully");
         }

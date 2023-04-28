@@ -26,6 +26,6 @@ public class RemoveKey implements Command {
 
     @Override
     public String info() {
-        return "[key] Description: update the value of a collection item whose id is equal to the specified one";
+        return "[key] Description: remove an element from a collection by its key";
     }
 }

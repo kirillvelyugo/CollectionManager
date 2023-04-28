@@ -2,9 +2,8 @@ package Commands;
 
 import CollectionManager.CollectionManager;
 import Expections.WrongArguments;
-import java.util.HashMap;
-import java.util.NoSuchElementException;
-import java.util.Scanner;
+
+import java.util.*;
 
 /**
  * Class for interactive CLI mode.
