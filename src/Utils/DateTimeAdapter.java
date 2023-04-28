@@ -6,6 +6,9 @@ import java.time.LocalDateTime;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 
+/**
+ * Class for marshalling abd unmarshalling dates
+ */
 public class DateTimeAdapter extends XmlAdapter<String, ZonedDateTime> {
     private final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm:ss");
 

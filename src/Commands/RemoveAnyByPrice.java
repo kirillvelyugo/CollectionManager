@@ -17,7 +17,6 @@ public class RemoveAnyByPrice implements Command{
 
         if (args.length < 2) throw new WrongArguments("Not enough arguments");
 
-        CLIManager cliManager = new CLIManager();
         double price;
         try {
             price = Double.parseDouble(args[1]);

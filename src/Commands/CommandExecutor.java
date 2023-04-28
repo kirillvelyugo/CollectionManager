@@ -59,7 +59,8 @@ public class CommandExecutor {
                 }
             }
             catch (NoSuchElementException e){
-                System.out.println("Exit program");
+                System.out.println("Exit interactive mode");
+                return;
             }
         }
     }

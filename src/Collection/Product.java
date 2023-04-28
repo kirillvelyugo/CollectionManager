@@ -108,7 +108,7 @@ public class Product implements Comparable<Product>{
      */
     public void setPrice(Double price) throws InvalidValue {
         if (price == null) {throw new InvalidValue("price shouldn't be null");}
-        if (price < 0) {throw new InvalidValue("price shouldn't be less than 0");}
+        if (price <= 0) {throw new InvalidValue("price shouldn't be less than 0");}
         this.price = price;
     }
 
@@ -146,12 +146,12 @@ public class Product implements Comparable<Product>{
     public String toString() {
         return "Product: id = " + this.id +
                 ", name = " + this.name +
-                ", " + this.coordinates +
-                ", creationDate = " + this.creationDate.format(DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm")) +
+                ", {" + this.coordinates +
+                "} , creationDate = " + this.creationDate.format(DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm")) +
                 ", price = " + this.price +
                 ", partNumber = " + this.partNumber +
                 ", unitOfMeasure = " + this.unitOfMeasure +
-                ", manufacturer = " + this.manufacturer;
+                ", manufacturer = {" + this.manufacturer + "}";
     }
 
     @Override

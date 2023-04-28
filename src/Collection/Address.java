@@ -18,7 +18,7 @@ public class Address {
      * @throws InvalidValue if zipCode is null
      */
     public void setZipCode(String zipCode) throws InvalidValue{
-        if (zipCode == null){throw new InvalidValue("zipCode shouldn't be null");}
+//        if (zipCode == null){throw new InvalidValue("zipCode shouldn't be null");}
         this.zipCode = zipCode;
     }
 

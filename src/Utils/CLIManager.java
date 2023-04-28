@@ -15,7 +15,7 @@ public class CLIManager {
      * @return correct string. Can be empty
      */
     public String requestString(){
-        String line = scanner.nextLine();
+        String line = scanner.nextLine().strip();
         if (line.length() == 0) return null;
         return line;
     }

@@ -53,7 +53,7 @@ public class Organization {
      */
     public void setEmployeesCount(Long employeesCount) throws InvalidValue {
         if (employeesCount == null) {throw new InvalidValue("employeesCount can't be null");}
-        if (employeesCount < 0) {throw new InvalidValue("employeesCount should be grader than 0");}
+        if (employeesCount <= 0) {throw new InvalidValue("employeesCount should be grader than 0");}
         this.employeesCount = employeesCount;
     }
 
@@ -67,7 +67,7 @@ public class Organization {
      * @throws InvalidValue If type is null
      */
     public void setType(OrganizationType type) throws InvalidValue {
-        if (type == null){throw new InvalidValue("organizationType shouldn't be null");}
+//        if (type == null){throw new InvalidValue("organizationType shouldn't be null");}
         this.type = type;
     }
 
@@ -91,6 +91,6 @@ public class Organization {
                 ", name = " + this.name +
                 ", employeesCount = " + this.employeesCount +
                 ", type = " + this.type +
-                ", officialAddress = " + this.officialAddress;
+                ", officialAddress = {" + this.officialAddress + "}";
     }
 }

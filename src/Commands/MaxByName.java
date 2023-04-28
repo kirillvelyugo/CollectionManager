@@ -31,7 +31,8 @@ public class MaxByName implements Command{
                 keyToShow = key;
             }
         }
-        System.out.println(collectionManager.getByKey(keyToShow));
+        if(maxName == null) System.out.println("Nothing to show");
+        else System.out.println(collectionManager.getByKey(keyToShow));
     }
 
     @Override

@@ -30,7 +30,7 @@ public class RemoveGreaterKey implements Command{
             }
         }
         collectionManager.getKeySet().removeAll(toRemove);
-        System.out.println("Removed " + counter + " elements");
+        System.out.println("--Removed " + counter + " elements--");
 
     }
 
